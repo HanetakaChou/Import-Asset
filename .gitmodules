@@ -1,0 +1,8 @@
+[submodule "thirdparty/cgltf"]
+	path = thirdparty/cgltf
+	url = git@github.com:HanetakaChou/Import-Asset.git
+	branch = cgltf
+[submodule "thirdparty/DirectXMesh"]
+	path = thirdparty/DirectXMesh
+	url = git@github.com:HanetakaChou/Import-Asset.git
+	branch = DirectXMath
