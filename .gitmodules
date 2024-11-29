@@ -1,0 +1,4 @@
+[submodule "thirdparty/Reversed-Z"]
+	path = thirdparty/Reversed-Z
+	url = git@github.com:HanetakaChou/Import-Asset.git
+	branch = Reversed-Z
