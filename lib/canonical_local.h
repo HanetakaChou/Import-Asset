@@ -1,2 +1,2 @@
-  (int)(long)&((struct stringpool_t *)0)->stringpool_str193,
-  (int)(long)&((struct stringpool_t *)0)->stringpool_str496,
+  offsetof(struct stringpool_t, stringpool_str193),
+  offsetof(struct stringpool_t, stringpool_str496),

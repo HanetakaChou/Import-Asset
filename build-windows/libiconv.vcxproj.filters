@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\lib\compat.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\iconv.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libcharset\lib\localcharset.c">
+      <Filter>libcharset</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>build-windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{6dde6bef-6f2c-4f0d-98b0-826629856e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcharset">
+      <UniqueIdentifier>{d78ef641-60fc-4996-8378-a2d431b49544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-windows">
+      <UniqueIdentifier>{ab011c1c-3837-480d-9ce5-618606cd61a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libiconv.def">
+      <Filter>build-windows</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -29,27 +29,26 @@ set "ENABLE_EXTRA" to "0"
 set "HAVE_SETLOCALE" to "0"  
 >  
 >> fix -I  
-iconv.c: -I include -I srclib 
-localcharset.c: -I libcharset -I srclib
-compat.c: -I include 
+-I srclib  
+iconv.c: -I include  
+compat.c: -I include  
+localcharset.c: -I libcharset  
 >  
 >> fix -D  
 -D_WIN32_WINNT=_WIN32_WINNT_WIN7  
 -D_CRT_SECURE_NO_WARNINGS  
 -DHAVE_CONFIG_H  
 iconv.c: -DBUILDING_LIBICONV 
+compat.c: -DBUILDING_LIBICONV  
 localcharset.c: -DBUILDING_LIBCHARSET  
 >  
 >> lib/canonical.h  
 lib/canonical_dos.h  
 lib/canonical_local.h  
-change "(int)(long)" to "offsetof(stringpool_t stringpool_t/stringpool2_t"  
->  
->> lib/aliases.h  
-change "int name" within "struct alias" to "intptr_t"
+change "(int)(long)" to "offsetof" (of "struct stringpool_t" / "struct stringpool2_t")  
 >  
 >> lib/iconv.c  
-change "(int)(long)" within "S" "(intptr_t)(uintptr_t)"  
+change "(int)(long)" within "S" to "offsetof" (of "struct stringpool2_t")  
 >  
 
 ```def  
